@@ -178,17 +178,7 @@ projectCards.forEach(card => {
         }
     });
     
-    // Click to view details
-    const viewDetailsBtn = card.querySelector('.view-details-btn');
-    if (viewDetailsBtn) {
-        viewDetailsBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const projectId = card.getAttribute('data-project');
-            if (projectId) {
-                switchPage(`project-${projectId}`);
-            }
-        });
-    }
+
 });
 
 // Keyboard shortcuts
