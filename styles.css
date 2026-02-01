@@ -981,6 +981,9 @@ body {
     font-size: 0.85rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    display: block; /* Added for anchor tag */
+    text-align: center; /* Added for anchor tag */
+    text-decoration: none; /* Added for anchor tag */
 }
 
 .view-details-btn:hover {
