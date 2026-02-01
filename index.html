@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pranavi@terminal:~$</title>
+    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Terminal Window -->
+    <div class="terminal-window">
+        <!-- Header -->
+        <div class="terminal-header">
+            <div class="controls">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+            </div>
+            <div class="terminal-title">pranavi@portfolio: ~/developer</div>
+            <div class="terminal-clock" id="clock"></div>
+        </div>
+
+        <!-- Main Container with Sidebar -->
+        <div class="main-container">
+            <!-- Sidebar Navigation -->
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <span class="sidebar-icon">📁</span>
+                    <span class="sidebar-title">Navigation</span>
+                </div>
+                
+                <nav class="nav-menu">
+                    <button class="nav-item active" data-page="home">
+                        <span class="nav-icon">🏠</span>
+                        <span class="nav-label">Home</span>
+                    </button>
+                    <button class="nav-item" data-page="projects">
+                        <span class="nav-icon">💻</span>
+                        <span class="nav-label">Projects</span>
+                    </button>
+                    <button class="nav-item" data-page="competitions">
+                        <span class="nav-icon">🏆</span>
+                        <span class="nav-label">Competitions</span>
+                    </button>
+                    <button class="nav-item" data-page="experience">
+                        <span class="nav-icon">💼</span>
+                        <span class="nav-label">Experience</span>
+                    </button>
+                    <button class="nav-item" data-page="research">
+                        <span class="nav-icon">🔬</span>
+                        <span class="nav-label">Research</span>
+                    </button>
+                </nav>
+
+                <div class="sidebar-footer">
+                    <div class="social-links">
+                        <a href="mailto:pkuntrapakam@connect.ust.hk" title="Email">✉</a>
+                        <a href="https://www.linkedin.com/in/pranavi-kuntrapakam/" target="_blank" title="LinkedIn">in</a>
+                        <a href="https://github.com/pranavi-apk" target="_blank" title="GitHub">&lt;/&gt;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="content-area">
+                <!-- HOME PAGE -->
+                <div class="page active" id="home">
+                    <div class="page-header">
+                        <div class="command-line">
+                            <span class="prompt">pranavi@portfolio</span>:<span class="path">~</span>$ whoami
+                        </div>
+                    </div>
+
+                    <div class="dashboard-grid">
+                        <!-- Main Info -->
+                        <div class="panel main-info">
+                            <h1 class="name">
+                                Pranavi Kuntrapakam
+                                <a href="resume.pdf" target="_blank" class="resume-link">RESUME 📄</a>
+                            </h1>
+                            <p class="tagline">Aspiring AI/ML Engineer • Hackathon Enthusiast</p>
+                            
+                            <div class="info-box">
+                                <div class="info-row">
+                                    <span class="key">location:</span>
+                                    <span class="value">Hong Kong SAR 🇭🇰 (Originally from India 🇮🇳)</span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="key">university:</span>
+                                    <span class="value">The Hong Kong University of Science and Technology (2023-2027)</span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="key">major:</span>
+                                    <span class="value">Computer Engineering + Artificial Intelligence</span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="key">currently:</span>
+                                    <span class="value status-active">AI/LLM Developer Intern @ Innocorn AI</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Current Work -->
+                        <div class="panel">
+                            <div class="panel-header">
+                                <span class="icon">💼</span>
+                                <span class="title">Current Work</span>
+                            </div>
+                            <div class="work-item active">
+                                <div class="badge">ACTIVE NOW</div>
+                                <h3>AI/LLM Developer Intern</h3>
+                                <p class="company">Innocorn AI @ HKSTP</p>
+                                <p class="desc">Building AI chatbot solutions • n8n automation</p>
+                            </div>
+                            <div class="work-item">
+                                <div class="badge startup">FUNDED 100K HKD</div>
+                                <h3>Lead Engineer</h3>
+                                <p class="company">Stealth Startup (AI Fashion Tech)</p>
+                                <p class="desc">React Native • Python • ML APIs</p>
+                            </div>
+                            
+                            <div class="work-item">
+                                <div class="badge">ONGOING</div>
+                                <h3>ML Engineer (Team Nexus)</h3>
+                                <p class="company">IADS Developer Hackathon</p>
+                                <p class="desc">Merchant Unification • NLP • Knowledge Graphs</p>
+                            </div>
+                        </div>
+
+                        <!-- Tech Stack & Certifications Column -->
+                        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                            <!-- Skills -->
+                            <div class="panel">
+                                <div class="panel-header">
+                                    <span class="icon">🛠️</span>
+                                    <span class="title">Tech Stack</span>
+                                </div>
+                                <div class="skills-grid-compact">
+                                    <div class="skill-group">
+                                        <span class="skill-label">Languages:</span>
+                                        <div class="skills-tags">
+                                            <span>Python</span><span>TypeScript</span><span>JavaScript</span><span>C++</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-group">
+                                        <span class="skill-label">Framework:</span>
+                                        <div class="skills-tags">
+                                            <span>React</span><span>React Native</span><span>FastAPI</span><span>PyTorch</span><span>TensorFlow</span><span>Scikit-learn</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-group">
+                                        <span class="skill-label">Tools:</span>
+                                        <div class="skills-tags">
+                                            <span>Git</span><span>Postman</span><span>WebRTC</span><span>REST</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Certifications -->
+                            <div class="panel">
+                                <div class="panel-header">
+                                    <span class="icon">📜</span>
+                                    <span class="title">Certifications</span>
+                                </div>
+                                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+                                    <li style="display: flex; gap: 0.5rem; color: var(--text-secondary); font-size: 0.85rem;">
+                                        <span style="color: var(--green);">•</span>
+                                        <span>Oracle Cloud Infrastructure 2025 AI Associate</span>
+                                    </li>
+                                    <li style="display: flex; gap: 0.5rem; color: var(--text-secondary); font-size: 0.85rem;">
+                                        <span style="color: var(--green);">•</span>
+                                        <span>Postman API Student Expert</span>
+                                    </li>
+                                    <li style="display: flex; gap: 0.5rem; color: var(--text-secondary); font-size: 0.85rem;">
+                                        <span style="color: var(--green);">•</span>
+                                        <span>Meta Front-End Developer</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Stats -->
+                        <!-- <div class="panel">
+                            <div class="panel-header">
+                                <span class="icon">📊</span>
+                                <span class="title">Quick Stats</span>
+                            </div>
+                            <div class="stats-row">
+                                <div class="stat">
+                                    <div class="stat-value">5+</div>
+                                    <div class="stat-label">Hackathons</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-value">300+</div>
+                                    <div class="stat-label">Datasets</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-value">100K</div>
+                                    <div class="stat-label">HKD Funding</div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- PROJECTS PAGE -->
+                <div class="page" id="projects">
+                    <div class="page-header">
+                        <div class="command-line">
+                            <span class="prompt">pranavi@portfolio</span>:<span class="path">~/projects</span>$ ls -la
+                        </div>
+                    </div>
+
+                    <div class="projects-grid">
+                        <div class="project-card" data-project="legal-rag">
+                            <div class="project-header">
+                                <span class="project-icon">⚖️</span>
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">RAG</span>
+                                    <span class="tag">NLP</span>
+                                </div>
+                            </div>
+                            <h3>HK Legal RAG System</h3>
+                            <p class="project-desc">End-to-end RAG pipeline for querying Hong Kong employment & financial case law with evidence-cited answers and semantic search capabilities.</p>
+                            <div class="project-tech">
+                                <strong>Tech:</strong> Python, Qdrant, Ollama, Streamlit
+                            </div>
+                            <div class="project-date">Sep 2025</div>
+                            <button class="view-details-btn">View Details →</button>
+                        </div>
+
+                        <div class="project-card" data-project="photobooth">
+                            <div class="project-header">
+                                <span class="project-icon">📸</span>
+                                <div class="project-tags">
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">WebRTC</span>
+                                </div>
+                            </div>
+                            <h3>PS: Wish You Were Here</h3>
+                            <p class="project-desc">Virtual long-distance photobooth enabling real-time collaborative photo strips with live mirroring and remote capture capabilities.</p>
+                            <div class="project-tech">
+                                <strong>Tech:</strong> Node.js, WebRTC, JavaScript, CSS
+                            </div>
+                            <div class="project-date">Mar 2025</div>
+                            <button class="view-details-btn">View Details →</button>
+                        </div>
+
+                        <div class="project-card" data-project="procrastinot">
+                            <div class="project-header">
+                                <span class="project-icon">⏰</span>
+                                <div class="project-tags">
+                                    <span class="tag">Chrome</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                            </div>
+                            <h3>Procrasti-NOT Extension</h3>
+                            <p class="project-desc">Chrome productivity extension with Pomodoro timer, task manager, and site blocker to enforce focus and combat procrastination.</p>
+                            <div class="project-tech">
+                                <strong>Tech:</strong> JavaScript, Manifest V3, Chrome APIs
+                            </div>
+                            <div class="project-date">Jan 2025</div>
+                            <button class="view-details-btn">View Details →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT DETAIL: Legal RAG -->
+                <div class="page project-detail" id="project-legal-rag">
+                    <div class="page-header">
+                        <button class="back-btn" onclick="switchPage('projects')">← Back to Projects</button>
+                        <div class="command-line">
+                            <span class="prompt">pranavi@portfolio</span>:<span class="path">~/projects/legal-rag</span>$ cat README.md
+                        </div>
+                    </div>
+
+                    <div class="project-detail-content">
+                        <div class="detail-header">
+                            <span class="project-icon-large">⚖️</span>
+                            <div>
+                                <h1>Hong Kong Employment & Financial Legal RAG System</h1>
+                                <p class="detail-subtitle">Intelligent Case Law Query System with Evidence Citation</p>
+                                <div class="detail-meta">
+                                    <span class="meta-item">📅 Sep 2025</span>
+                                    <span class="meta-item">🏷️ Python • RAG • NLP</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h2>🎯 Project Overview</h2>
+                            <p>Built an end-to-end Retrieval-Augmented Generation (RAG) pipeline specifically designed for querying Hong Kong employment and financial case law. The system combines semantic search with large language models to provide accurate, evidence-cited answers to legal queries.</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h2>⚙️ Technical Implementation</h2>
+                            <div class="tech-stack-detail">
+                                <div class="tech-item">
+                                    <strong>Vector Database:</strong> Qdrant for efficient semantic search and similarity matching
+                                </div>
+                                <div class="tech-item">
+                                    <strong>LLM Integration:</strong> Ollama for local language model inference
+                                </div>
+                                <div class="tech-item">
+                                    <strong>Backend:</strong> Python with custom preprocessing and embedding pipelines
+                                </div>
+                                <div class="tech-item">
+                                    <strong>Frontend:</strong> Streamlit for interactive user interface
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h2>✨ Key Features</h2>
+                            <ul class="features-list">
+                                <li><strong>Semantic Search:</strong> Natural language queries for finding relevant case law</li>
+                                <li><strong>Evidence Citation:</strong> All answers include direct citations to source documents</li>
+                                <li><strong>Document Processing:</strong> Automated ingestion and embedding of legal documents</li>
+                                <li><strong>Legal Analytics:</strong> Query analysis and case law relationship mapping</li>
+                                <li><strong>Interactive UI:</strong> User-friendly Streamlit interface for legal professionals</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h2>🏗️ Architecture</h2>
+                            <p>The system follows a three-layer architecture:</p>
+                            <ol class="architecture-list">
+                                <li><strong>Data Layer:</strong> Document preprocessing, chunking, and embedding generation</li>
+                                <li><strong>Retrieval Layer:</strong> Semantic search using Qdrant vector database</li>
+                                <li><strong>Generation Layer:</strong> LLM-based answer synthesis with source attribution</li>
+                            </ol>
+                        </div>
+
+                        <div class="detail-section">
+                            <h2>💡 Challenges & Solutions</h2>
+                            <p>Developed custom preprocessing scripts to handle legal document formatting and maintain citation accuracy. Implemented hybrid search combining semantic similarity with keyword matching for improved recall on specific legal terms.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT DETAIL: Photobooth -->
+                <div class="page project-detail" id="project-photobooth">
+                    <div class="page-header">
+                        <button class="back-btn" onclick="switchPage('projects')">← Back to Projects</button>
+                        <div class="command-line">
+                            <span class="prompt">pranavi@portfolio</span>:<span class="path">~/projects/photobooth</span>$ cat README.md
+                        </div>
+                    </div>
+
+                    <div class="project-detail-content">
+                        <div class="detail-header">
+                            <span class="project-icon-large">📸</span>
+                            <div>
+                                <h1>PS: Wish You Were Here</h1>
+                                <p class="detail-subtitle">Virtual Long-Distance Photobooth</p>
+                                <div class="detail-meta">
+                                    <span class="meta-item">📅 Mar 2025</span>
+                                    <span class="meta-item">🏷️ Node.js • WebRTC • Real-time</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h2>🎯 Project Overview</h2>
+                            <p>Developed a full-stack web application that enables friends and loved ones across distances to create collaborative photo strips together in real-time. The platform simulates the experience of a traditional photobooth while adding the magic of remote connection.</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h2>⚙️ Technical Implementation</h2>
+                            <div class="tech-stack-detail">
+                                <div class="tech-item">
+                                    <strong>Real-time Communication:</strong> WebRTC for peer-to-peer video streaming
+                                </div>
+                                <div class="tech-item">
+                                    <strong>Backend:</strong> Node.js server for signaling and session management
+                                </div>
+                                <div class="tech-item">
+                                    <strong>Frontend:</strong> Vanilla JavaScript with responsive CSS design
+                                </div>
+                                <div class="tech-item">
+                                    <strong>Media Processing:</strong> Canvas API for photo capture and strip composition
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h2>✨ Key Features</h2>
+                            <ul class="features-list">
+                                <li><strong>Live Mirroring:</strong> Real-time video feed synchronization between participants</li>
+                                <li><strong>Remote Capture:</strong> Either party can trigger photo captures</li>
+                                <li><strong>Photo Strip Editor:</strong> Interactive editing interface for customization</li>
+                                <li><strong>Export Options:</strong> Download photo strips in various formats</li>
+                                <li><strong>Cross-Device Support:</strong> Optimized for desktop and mobile browsers</li>
+                                <li><strong>Privacy First:</strong> Peer-to-peer connections with no server-side storage</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h2>🏗️ Architecture</h2>
+                            <p>Built on a peer-to-peer architecture using WebRTC for direct browser-to-browser communication:</p>
+                            <ol class="architecture-list">
+                                <li><strong>Signaling Server:</strong> Node.js handles connection establishment</li>
+                                <li><strong>P2P Connection:</strong> WebRTC creates direct media streams</li>
+                                <li><strong>Client Application:</strong> JavaScript manages UI and photo processing</li>
+                            </ol>
+                        </div>
+
+                        <div class="detail-section">
+                            <h2>💡 Challenges & Solutions</h2>
+                            <p>Synchronized photo capture across different network conditions required implementing a timing coordination system. Optimized media stream quality dynamically based on bandwidth. Created responsive layouts that adapt to various screen sizes while maintaining the photobooth aesthetic.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT DETAIL: Procrasti-NOT -->
+                <div class="page project-detail" id="project-procrastinot">
+                    <div class="page-header">
+                        <button class="back-btn" onclick="switchPage('projects')">← Back to Projects</button>
+                        <div class="command-line">
+                            <span class="prompt">pranavi@portfolio</span>:<span class="path">~/projects/procrastinot</span>$ cat README.md
+                        </div>
+                    </div>
+
+                    <div class="project-detail-content">
+                        <div class="detail-header">
+                            <span class="project-icon-large">⏰</span>
+                            <div>
+                                <h1>Procrasti-NOT Chrome Extension</h1>
+                                <p class="detail-subtitle">Productivity Extension with Focus Enforcement</p>
+                                <div class="detail-meta">
+                                    <span class="meta-item">📅 Jan 2025</span>
+                                    <span class="meta-item">🏷️ Chrome Extension • JavaScript • Manifest V3</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h2>🎯 Project Overview</h2>
+                            <p>Developed and published a Chrome extension that combines multiple productivity techniques to help users maintain focus and combat procrastination. The extension integrates Pomodoro timing, task management, and intelligent site blocking into a seamless browser experience.</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h2>⚙️ Technical Implementation</h2>
+                            <div class="tech-stack-detail">
+                                <div class="tech-item">
+                                    <strong>Extension Framework:</strong> Chrome Extension Manifest V3 (latest standard)
+                                </div>
+                                <div class="tech-item">
+                                    <strong>Core Language:</strong> Vanilla JavaScript for performance
+                                </div>
+                                <div class="tech-item">
+                                    <strong>Storage:</strong> Chrome Storage API for persistent data
+                                </div>
+                                <div class="tech-item">
+                                    <strong>UI:</strong> HTML/CSS popup with dynamic badge updates
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-section">
+                            <h2>✨ Key Features</h2>
+                            <ul class="features-list">
+                                <li><strong>Pomodoro Timer:</strong> Customizable work/break intervals with notifications</li>
+                                <li><strong>Task Manager:</strong> Create, track, and complete daily tasks</li>
+                                <li><strong>Site Blocker:</strong> Block distracting websites during focus sessions</li>
+                                <li><strong>Badge Updates:</strong> Real-time timer display on extension icon</li>
+                                <li><strong>Motivational Overlays:</strong> Encouraging messages when accessing blocked sites</li>
+                                <li><strong>Persistent Storage:</strong> Tasks and settings saved across sessions</li>
+                                <li><strong>Statistics:</strong> Track productivity patterns and completed sessions</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h2>🏗️ Architecture</h2>
+                            <p>Built following Chrome Extension best practices:</p>
+                            <ol class="architecture-list">
+                                <li><strong>Background Service Worker:</strong> Manages timers and site blocking logic</li>
+                                <li><strong>Popup Interface:</strong> User interaction and settings management</li>
+                                <li><strong>Content Scripts:</strong> Inject motivational overlays on blocked sites</li>
+                                <li><strong>Storage Layer:</strong> Chrome Storage API for user data persistence</li>
+                            </ol>
+                        </div>
+
+                        <div class="detail-section">
+                            <h2>💡 Challenges & Solutions</h2>
+                            <p>Migrated from Manifest V2 to V3, adapting to service workers instead of background pages. Implemented efficient timer management that works across browser restarts. Designed an intuitive UI that provides quick access to all features while maintaining minimalist design principles.</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h2>📦 Published Extension</h2>
+                            <p>Successfully published to the Chrome Web Store, making it available to users worldwide. Implemented comprehensive error handling and user feedback mechanisms.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COMPETITIONS PAGE -->
+                <div class="page" id="competitions">
+                    <div class="page-header">
+                        <div class="command-line">
+                            <span class="prompt">pranavi@portfolio</span>:<span class="path">~/competitions</span>$ cat achievements.txt
+                        </div>
+                    </div>
+
+                    <div class="competitions-list">
+                        <div class="competition-card gold-border">
+                            <div class="competition-header">
+                                <div class="achievement-badge gold">🥇 1st Place</div>
+                                <span class="year">2025</span>
+                            </div>
+                            <h3>Global Sustainability Challenge - Team Tycoon</h3>
+                            <p class="competition-desc">
+                                Built <strong>Resilient360</strong>, an integrated disaster management solution simplifying coordination and accelerating response through a connected, data-driven approach.
+                            </p>
+                            <div class="competition-role">
+                                <strong>Role:</strong> Full Stack Developer
+                            </div>
+                            <!-- <a href="https://www.globalsustainabilitychallenge.org/" target="_blank" class="competition-link">Learn More →</a> -->
+                        </div>
+
+                        <div class="competition-card silver-border">
+                            <div class="competition-header">
+                                <div class="achievement-badge silver">🏅 Semi-Finalist</div>
+                                <span class="year">2025</span>
+                            </div>
+                            <h3>IADS Developer Hackathon - Team Nexus</h3>
+                            <p class="competition-desc">
+                                Led ML engineering for <strong>Nexus</strong>: AI merchant unification resolving 165K+ fragmented MIDs via NLP & knowledge graphs on IADS datasets for 15 HK banks.
+                            </p>
+                            <div class="competition-role">
+                                <strong>Role:</strong> ML Engineer
+                            </div>
+                            <!-- <a href="https://www.hkstp.org/en/park-life/news-and-events/events/iads-developer-hackathon" target="_blank" class="competition-link">Learn More →</a> -->
+                        </div>
+
+                        <div class="competition-card bronze-border">
+                            <div class="competition-header">
+                                <div class="achievement-badge bronze">🎯 Finalist (Top 10)</div>
+                                <span class="year">2025</span>
+                            </div>
+                            <h3>Inter-University GenAI Hackathon for SDG - Team 1101 Mingle</h3>
+                            <p class="competition-desc">
+                                All-in-one app targeting elderly isolation and late-life depression in Hong Kong. Ranked in Top 40 among 200+ teams and Top 10 in our track.
+                            </p>
+                            <div class="competition-role">
+                                <strong>Role:</strong> Developer
+                            </div>
+                        </div>
+
+                        <div class="competition-card">
+                            <div class="competition-header">
+                                <div class="achievement-badge">🎖️ Finalist</div>
+                                <span class="year">2025</span>
+                            </div>
+                            <h3>IET Young Professionals Exhibition - Team UG02</h3>
+                            <p class="competition-desc">
+                                Engineered an AI-powered wristband designed to detect and respond to falls among older adults, promoting safer independent living.
+                            </p>
+                        </div>
+
+                        <div class="competition-card">
+                            <div class="competition-header">
+                                <div class="achievement-badge">🎖️ Finalist (Top 10)</div>
+                                <span class="year">2025</span>
+                            </div>
+                            <h3>Morgan Stanley Code to Give Hackathon - Team 8</h3>
+                            <p class="competition-desc">
+                                Highest code contributor, led React Native/TypeScript frontend. Built workflows and integrated Python/FastAPI backend via REST.
+                            </p>
+                            <div class="competition-role">
+                                <strong>Role:</strong> Frontend Lead
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EXPERIENCE PAGE -->
+                <div class="page" id="experience">
+                    <div class="page-header">
+                        <div class="command-line">
+                            <span class="prompt">pranavi@portfolio</span>:<span class="path">~/experience</span>$ cat timeline.log
+                        </div>
+                    </div>
+
+                    <div class="timeline-list">
+                        <div class="timeline-card active">
+                            <div class="timeline-badge">CURRENT</div>
+                            <h3>AI/LLM Developer Intern</h3>
+                            <p class="company">Innocorn AI • HKSTP, Hong Kong SAR</p>
+                            <p class="period">Oct 2025 - Present</p>
+                            <ul class="responsibilities">
+                                <li>Developing and enhancing AI-powered chatbot solutions using LLM to improve Kimiyi AI</li>
+                                <li>Implementing workflow automation with n8n to streamline business processes</li>
+                                <li>Integrating AI services with existing systems</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-card active">
+                            <div class="timeline-badge startup">FUNDED</div>
+                            <h3>Lead Engineer (Founding Team)</h3>
+                            <p class="company">Stealth Startup (AI Fashion Tech) • Funded 100K HKD by HKSTP</p>
+                            <p class="period">Sep 2025 - Present</p>
+                            <ul class="responsibilities">
+                                <li>Architected full-stack AI-powered platform using React Native and Python</li>
+                                <li>Integrating machine learning APIs for personalized recommendations</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-card">
+                            <h3>Talent Foundry Starter</h3>
+                            <p class="company">HKSTP • Hong Kong SAR</p>
+                            <p class="period">Oct 2025 - Present</p>
+                            <ul class="responsibilities">
+                                <li>Advanced training in AI, ML, and innovation technology for career readiness</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-card">
+                            <h3>AI & UI/UX Development Intern</h3>
+                            <p class="company">Voyager Education Ltd • Hong Kong SAR</p>
+                            <p class="period">Mar 2025 - Jun 2025</p>
+                            <ul class="responsibilities">
+                                <li>Developed AI-based projects and educational materials for STEAM learning</li>
+                                <li>Enhanced UI/UX design of landing page for better user experience</li>
+                                <li>Assisted with consulting projects and proposal development</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-card">
+                            <h3>Research and Data Analyst Intern</h3>
+                            <p class="company">SoleFit Care Ltd • Remote, HKG</p>
+                            <p class="period">Dec 2024 - Jan 2025</p>
+                            <ul class="responsibilities">
+                                <li>Collected and processed 300+ 3D foot sole datasets for AI-driven models</li>
+                                <li>Developed preprocessing scripts in Python for CNN model training</li>
+                                <li>Improved dataset accuracy and feature extraction</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RESEARCH PAGE -->
+                <div class="page" id="research">
+                    <div class="page-header">
+                        <div class="command-line">
+                            <span class="prompt">pranavi@portfolio</span>:<span class="path">~/research</span>$ cat publications.bib
+                        </div>
+                    </div>
+
+                    <div class="research-list">
+                        <div class="research-card highlighted">
+                            <div class="research-badge">ONGOING</div>
+                            <h3>2026 Happy City Index Researcher for Hong Kong</h3>
+                            <p class="organization">Happy City Hub • 2025-2026</p>
+                            <p class="research-desc">
+                                Selected as the primary researcher for Hong Kong in a global initiative evaluating urban happiness and well-being. 
+                                Responsible for data collection, analysis, and assessment of <strong>82+ city indicators</strong> across six key dimensions: 
+                                Citizens, Governance, Environment, Economy, Health, and Mobility.
+                            </p>
+                            <p class="research-desc">
+                                Contributing qualitative and quantitative insights for the international Happy City Index report.
+                            </p>
+                        </div>
+
+                        <div class="research-card">
+                            <h3>Role of AI in Finding Habitable Planets</h3>
+                            <p class="organization">IRI-NC • Research Scholar • 2023</p>
+                            <p class="research-desc">
+                                Conducted comprehensive literature review under the guidance of <strong>Dr. Robert Malkin (Duke University)</strong> 
+                                on AI applications in planetary habitability detection.
+                            </p>
+                            <p class="research-desc">
+                                Explored machine learning techniques for analyzing exoplanet data and identifying potentially habitable worlds.
+                            </p>
+                        </div>
+
+                        <!-- <div class="certifications-section">
+                            <h3>Certifications</h3>
+                            <div class="cert-list">
+                                <div class="cert-item">
+                                    <span class="cert-icon">🎓</span>
+                                    <div>
+                                        <strong>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</strong>
+                                        <p>Oracle</p>
+                                    </div>
+                                </div>
+                                <div class="cert-item">
+                                    <span class="cert-icon">🎓</span>
+                                    <div>
+                                        <strong>Postman API Fundamentals Student Expert</strong>
+                                        <p>Postman</p>
+                                    </div>
+                                </div>
+                                <div class="cert-item">
+                                    <span class="cert-icon">🎓</span>
+                                    <div>
+                                        <strong>Introduction to Front-End Development</strong>
+                                        <p>Meta</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Command Line -->
+        <div class="terminal-footer">
+            <span class="prompt">pranavi@portfolio</span>:<span class="path" id="current-path">~</span>$ <span class="cursor">█</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
